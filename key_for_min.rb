@@ -13,6 +13,7 @@ def key_for_min_value(name_hash)
       current_low=quantity
       key=name
       # binding.pry
+      return key
     else
       return key
     end
