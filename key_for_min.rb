@@ -9,12 +9,13 @@ def key_for_min_value(name_hash)
   else name_hash.collect do |name, quantity|
     if current_low==nil
       current_low=quantity
-    else quantity < current_low
+    elsif quantity < current_low
       current_low=quantity
       key=name
       # binding.pry
+    else
+      key
     end
   end
   end
-  key
 end
