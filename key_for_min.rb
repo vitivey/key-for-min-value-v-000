@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   current_low=nil
   key=nil
   if name_hash.nil?
-    nil
+    return nil
   else name_hash.collect do |name, quantity|
     if current_low==nil
       current_low=quantity
@@ -14,7 +14,7 @@ def key_for_min_value(name_hash)
       key=name
       # binding.pry
     else
-      key
+      return key
     end
   end
   end
